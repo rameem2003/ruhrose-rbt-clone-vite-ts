@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+  --color-fade: #444;
+  --font-main: "Public Sans", sans-serif;
+  --shadow-custom: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+.bounce-animation {
+  animation-name: scaling;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaling {
+  0%,
+  100% {
+    transform: scale(0px);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
