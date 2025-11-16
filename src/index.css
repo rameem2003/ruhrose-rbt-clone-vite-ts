@@ -4,6 +4,8 @@
   --color-fade: #444;
   --font-main: "Public Sans", sans-serif;
   --shadow-custom: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) inset;
+  --shadow-custom-one: 0 10px 10px -5px rgba(0, 0, 0, 0.5),
+    0 10px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
 .bounce-animation {

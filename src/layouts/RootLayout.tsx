@@ -3,6 +3,7 @@ import Navbar from "../components/shared/Navbar";
 import { Outlet } from "react-router";
 import { MenuToggleContext } from "../context/MenuToggleProvider";
 import { HiBars3 } from "react-icons/hi2";
+import Footer from "../components/shared/Footer";
 
 const RootLayout = () => {
   const { toggle, setToggle } = useContext(MenuToggleContext)!;
@@ -22,6 +23,7 @@ const RootLayout = () => {
           <HiBars3 size={30} className=" text-white" />
         </div>
         <Outlet />
+        <Footer />
       </main>
     </div>
   );
