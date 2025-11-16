@@ -10,7 +10,7 @@ import SectionFour from "../components/screens/Home/SectionFour";
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1800, // Animation duration
+      duration: 3000, // Animation duration
     });
   }, []);
 

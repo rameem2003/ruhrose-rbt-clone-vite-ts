@@ -7,6 +7,7 @@ const SectionTwo = () => {
       <div className=" flex flex-col md:flex-row items-center justify-center mx-3 2xl:mx-[120px] gap-10">
         <div className=" w-full lg:w-1/2">
           <img
+            className="w-full"
             src="https://i0.wp.com/www.ruhrose.com/wp-content/uploads/2024/09/ruhrose-pants.jpg?fit=400%2C500&ssl=11"
             alt=""
           />

@@ -29,6 +29,7 @@ const SectionThree = () => {
 
         <div className=" w-full lg:w-1/2">
           <img
+            className="w-full"
             src="https://i0.wp.com/www.ruhrose.com/wp-content/uploads/2024/08/cropped-shot-of-a-group-of-people-holding-plants-g-2023-11-27-05-21-39-utc-1-scaled.jpg?fit=500%2C550&ssl=1"
             alt=""
           />

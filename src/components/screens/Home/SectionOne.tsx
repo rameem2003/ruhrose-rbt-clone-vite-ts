@@ -27,6 +27,7 @@ const SectionOne = () => {
         </div>
         <div className=" w-full lg:w-1/2">
           <img
+            className="w-full"
             src="https://i0.wp.com/www.ruhrose.com/wp-content/uploads/2025/01/denim-design-pants-.jpg?resize=683%2C1024&ssl=1"
             alt=""
           />
