@@ -6,7 +6,7 @@ import { HiBars3 } from "react-icons/hi2";
 import Footer from "../components/shared/Footer";
 
 const RootLayout = () => {
-  const { toggle, setToggle } = useContext(MenuToggleContext)!;
+  // const { toggle, setToggle } = useContext(MenuToggleContext)!;
 
   return (
     <>
