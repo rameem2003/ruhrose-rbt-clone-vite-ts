@@ -81,17 +81,17 @@ const Banner = () => {
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="h-full">
               <img
                 className=" w-full h-full"
                 src="https://images.unsplash.com/photo-1741275270905-b4c6e4c4b1aa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
 
-        <div className="w-full flex pt-40 flex-col bg-black/90 items-center justify-center h-screen absolute top-0 left-0 z-10">
+        <div className="w-full flex pt-20 lg:pt-40 flex-col bg-black/90 items-center justify-center h-screen absolute top-0 left-0 z-10">
           <ComponentReveal y={-50}>
             <h1 className=" text-6xl md:text-9xl font-title font-extrabold text-center text-secondary">
               Site Title

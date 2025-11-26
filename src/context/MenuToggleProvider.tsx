@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 
 interface ContextProps {
-  toggle: Boolean;
+  toggle: boolean;
   setToggle: React.Dispatch<React.SetStateAction<boolean>>;
 }
 

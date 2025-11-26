@@ -3,7 +3,15 @@ import logo from "../../assets/logo.png";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-const NavberNew = () => {
+import { HiBars3BottomRight } from "react-icons/hi2";
+import { NavOption } from "../../constant/NavConstant";
+const NavberNew = ({
+  toggle,
+  setToggle,
+}: {
+  toggle: boolean;
+  setToggle: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
 
   const handleScroll = () => {
@@ -57,9 +65,42 @@ const NavberNew = () => {
               bounce: 0.5,
               type: "spring",
             }}
-            className=" flex items-center gap-5 justify-end"
+            className=" block lg:hidden items-center gap-5 justify-end"
           >
-            <li>
+            <button
+              onClick={() => setToggle(true)}
+              className=" relative z-10000"
+            >
+              <HiBars3BottomRight
+                size={40}
+                className=" text-secondary cursor-pointer"
+              />
+            </button>
+          </motion.ul>
+
+          <motion.ul
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1.5,
+              delay: 0.2,
+              ease: "easeInOut",
+              bounce: 0.5,
+              type: "spring",
+            }}
+            className=" hidden lg:flex items-center gap-5 justify-end"
+          >
+            {NavOption.map((option) => (
+              <li>
+                <Link
+                  to={option.href}
+                  className=" text-lg font-medium font-title-two text-secondary capitalize"
+                >
+                  {option.name}
+                </Link>
+              </li>
+            ))}
+            {/* <li>
               <Link
                 to="/"
                 className=" text-lg font-medium font-title-two text-secondary capitalize"
@@ -90,7 +131,7 @@ const NavberNew = () => {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
           </motion.ul>
         </div>
       </Container>
