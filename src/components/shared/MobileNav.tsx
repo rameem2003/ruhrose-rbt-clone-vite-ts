@@ -44,6 +44,7 @@ const MobileNav = ({
               {NavOption.map((option) => (
                 <li>
                   <Link
+                    onClick={() => setToggle(false)}
                     to={option.href}
                     className=" text-center block mb-10 text-6xl font-medium font-title-two text-secondary capitalize"
                   >
