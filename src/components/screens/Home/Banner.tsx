@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import ComponentReveal from "../../common/ComponentReveal";
 
 // import required modules
 
@@ -91,16 +92,20 @@ const Banner = () => {
         </Swiper>
 
         <div className="w-full flex flex-col bg-black/65 items-center justify-center h-screen absolute top-0 left-0 z-10">
-          <h1 className=" text-6xl md:text-9xl font-title font-extrabold text-center text-white">
-            Site Title
-          </h1>
+          <ComponentReveal y={-50}>
+            <h1 className=" text-6xl md:text-9xl font-title font-extrabold text-center text-white">
+              Site Title
+            </h1>
+          </ComponentReveal>
 
-          <p className="text-white w-auto lg:w-[700px] mx-auto mt-5 font-title-two text-center font-medium text-xl md:text-2xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
-            eligendi animi veniam porro nesciunt fugit modi,
-          </p>
+          <ComponentReveal y={-50} delay={0.8}>
+            <p className="text-white w-auto lg:w-[700px] mx-auto mt-5 font-title-two text-center font-medium text-xl md:text-2xl">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+              eligendi animi veniam porro nesciunt fugit modi,
+            </p>
+          </ComponentReveal>
 
-          <button className=" cursor-pointer">
+          <button className=" cursor-pointer animate-bounce">
             <BsArrowDown className=" text-white text-[60px] font-semibold mt-20" />
           </button>
         </div>
