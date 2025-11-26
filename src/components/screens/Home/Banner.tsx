@@ -91,22 +91,22 @@ const Banner = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="w-full flex flex-col bg-black/65 items-center justify-center h-screen absolute top-0 left-0 z-10">
+        <div className="w-full flex pt-40 flex-col bg-black/90 items-center justify-center h-screen absolute top-0 left-0 z-10">
           <ComponentReveal y={-50}>
-            <h1 className=" text-6xl md:text-9xl font-title font-extrabold text-center text-white">
+            <h1 className=" text-6xl md:text-9xl font-title font-extrabold text-center text-secondary">
               Site Title
             </h1>
           </ComponentReveal>
 
           <ComponentReveal y={-50} delay={0.8}>
-            <p className="text-white w-auto lg:w-[700px] mx-auto mt-5 font-title-two text-center font-medium text-xl md:text-2xl">
+            <p className="text-secondary w-auto lg:w-[700px] mx-auto mt-5 font-title-two text-center font-medium text-xl md:text-2xl">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
               eligendi animi veniam porro nesciunt fugit modi,
             </p>
           </ComponentReveal>
 
-          <button className=" cursor-pointer animate-bounce">
-            <BsArrowDown className=" text-white text-[60px] font-semibold mt-20" />
+          <button className=" mt-10 w-[60px] h-[60px] cursor-pointer animate-bounce rounded-full flex items-center justify-center bg-transparent hover:bg-white duration-300">
+            <BsArrowDown className=" text-secondary hover:text-black text-3xl font-semibold" />
           </button>
         </div>
       </section>

@@ -1,0 +1,101 @@
+import Container from "../common/Container";
+import logo from "../../assets/logo.png";
+import { Link } from "react-router";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+const NavberNew = () => {
+  const [scrolled, setScrolled] = useState<boolean>(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 20) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 w-full duration-300 ${
+        scrolled ? "bg-primary" : "bg-transparent"
+      } `}
+    >
+      <Container>
+        <div className=" flex items-center justify-between py-2">
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1.5,
+              delay: 0.2,
+              ease: "easeInOut",
+              bounce: 0.5,
+              type: "spring",
+            }}
+          >
+            <Link to="/">
+              <img src={logo} alt="Logo" className="w-[80px]" />
+            </Link>
+          </motion.div>
+
+          <motion.ul
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1.5,
+              delay: 0.2,
+              ease: "easeInOut",
+              bounce: 0.5,
+              type: "spring",
+            }}
+            className=" flex items-center gap-5 justify-end"
+          >
+            <li>
+              <Link
+                to="/"
+                className=" text-lg font-medium font-title-two text-secondary capitalize"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                className=" text-lg font-medium font-title-two text-secondary capitalize"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/collections"
+                className=" text-lg font-medium font-title-two text-secondary capitalize"
+              >
+                Collections
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className=" text-lg font-medium font-title-two text-secondary capitalize"
+              >
+                Contact
+              </Link>
+            </li>
+          </motion.ul>
+        </div>
+      </Container>
+    </nav>
+  );
+};
+
+export default NavberNew;

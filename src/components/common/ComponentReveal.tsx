@@ -16,6 +16,8 @@ const ComponentReveal = ({
   y?: number;
 }) => {
   const ref = useRef(null);
+  console.log(ref.current);
+
   const isInView = useInView(ref, {
     once: true,
     margin: "-100px",

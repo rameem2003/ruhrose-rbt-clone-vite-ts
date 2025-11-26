@@ -23,9 +23,9 @@ const images = [
 
 const Varity = () => {
   return (
-    <section className=" my-40">
+    <section className=" py-40">
       <Container>
-        <div className=" flex flex-wrap lg:flex-nowrap items-center justify-between gap-20">
+        <div className="  flex flex-wrap lg:flex-nowrap items-center justify-between gap-20">
           <div className=" w-full lg:w-1/2">
             <ComponentReveal x={-50}>
               <div className=" flex items-center flex-wrap justify-between gap-1 md:hidden">
@@ -45,12 +45,12 @@ const Varity = () => {
           </div>
           <div className=" w-full lg:w-1/2">
             <ComponentReveal x={50}>
-              <h2 className=" text-3xl md:text-5xl font-title-two font-bold mt-4 leading-[50px] md:leading-[70px]">
+              <h2 className=" text-primary  text-3xl md:text-5xl font-title-two font-bold mt-4 leading-[50px] md:leading-[70px]">
                 We are <span className=" font-title">Dynamic Company </span>
                 to <span className=" font-title">Sustainable Fashion</span>
               </h2>
 
-              <p className=" mt-4 text-[20px] font-title-two font-medium">
+              <p className=" text-primary  mt-4 text-[20px] font-title-two font-medium">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam quod quibusdam quia quae quos quia quibusdam quia quae
                 quos.
