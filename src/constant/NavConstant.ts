@@ -1,18 +1,26 @@
 export const NavOption = [
   {
     name: "Home",
-    href: "/",
+    href: "#home",
   },
   {
     name: "About",
-    href: "/about",
+    href: "#about",
   },
   {
-    name: "Collections",
-    href: "/collections",
+    name: "Design",
+    href: "#design",
+  },
+  {
+    name: "Sustainability",
+    href: "#sustainability",
+  },
+  {
+    name: "Services",
+    href: "#services",
   },
   {
     name: "Contact",
-    href: "/contact",
+    href: "#contact",
   },
 ];

@@ -23,15 +23,15 @@ const images = [
 
 const Varity = () => {
   return (
-    <section className=" py-40">
+    <section id="design" className=" py-40">
       <Container>
         <div className="  flex flex-wrap lg:flex-nowrap items-center justify-between gap-20">
           <div className=" w-full lg:w-1/2">
             <ComponentReveal x={-50}>
               <div className=" flex items-center flex-wrap justify-between gap-1 md:hidden">
                 {images.slice(0, 6).map((src, i) => (
-                  <div className="w-[48%]">
-                    <img key={i} src={src} alt="" className="gallery_img" />
+                  <div key={i} className="w-[48%]">
+                    <img src={src} alt="" className="gallery_img" />
                   </div>
                 ))}
               </div>

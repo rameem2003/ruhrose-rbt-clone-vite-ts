@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { NavOption } from "../../constant/NavConstant";
+import { HashLink } from "react-router-hash-link";
 const NavberNew = ({
   toggle,
   setToggle,
@@ -91,14 +92,15 @@ const NavberNew = ({
             }}
             className=" hidden gap-10 lg:flex items-center justify-end"
           >
-            {NavOption.map((option) => (
-              <li>
-                <Link
+            {NavOption.map((option, i) => (
+              <li key={i}>
+                <HashLink
+                  smooth
                   to={option.href}
                   className=" text-base uppercase font-normal font-title-two text-secondary"
                 >
                   {option.name}
-                </Link>
+                </HashLink>
               </li>
             ))}
             {/* <li>

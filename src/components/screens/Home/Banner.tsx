@@ -58,7 +58,7 @@ const Banner = () => {
         </div>
       </section>
 
-      <section className=" w-full h-screen relative">
+      <section id="home" className=" w-full h-screen relative">
         <Swiper
           loop={true}
           // speed={1000}
@@ -92,7 +92,7 @@ const Banner = () => {
         </Swiper>
 
         <div className="w-full flex pt-20 lg:pt-40 flex-col bg-white/10 backdrop-blur-sm items-center justify-center h-screen absolute top-0 left-0 z-10">
-          <div className="  p-32 rounded-md bg-white/50  backdrop-blur-3xl">
+          <div className=" p-10 xl:p-32 rounded-md bg-white/50  backdrop-blur-3xl">
             <ComponentReveal y={-50}>
               <h1 className=" text-6xl md:text-9xl font-title-three font-extrabold text-center text-secondary">
                 RIVO <span className=" italic">Canada</span>

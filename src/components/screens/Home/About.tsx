@@ -1,9 +1,17 @@
+import { useState } from "react";
 import ComponentReveal from "../../common/ComponentReveal";
 import Container from "../../common/Container";
+import ReadMoreAbout from "./ReadMoreAbout";
+import about1 from "../../../assets/about1.jpg";
 
 const About = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   return (
-    <section className=" bg-primary py-40">
+    <section id="about" className=" bg-primary py-40">
+      <ReadMoreAbout
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
       <Container>
         <div className=" flex items-start flex-wrap lg:flex-nowrap justify-between gap-4">
           <div className="  w-full lg:w-1/2">
@@ -59,6 +67,13 @@ const About = () => {
                   </p>
                 </div>
               </div>
+
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="cursor-pointer py-3 px-6 border-2 border-secondary w-full font-medium font-title-two text-secondary duration-300 hover:bg-secondary hover:text-white mt-10"
+              >
+                Read More
+              </button>
             </ComponentReveal>
           </div>
 
@@ -66,7 +81,7 @@ const About = () => {
             <ComponentReveal x={50}>
               <img
                 className=" rounded-tl-2xl rounded-br-2xl w-full max-h-[700px] object-cover"
-                src="https://plus.unsplash.com/premium_photo-1674624533701-b85191890413?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src={about1}
                 alt="About company"
               />
             </ComponentReveal>
