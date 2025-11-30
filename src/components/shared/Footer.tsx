@@ -88,14 +88,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <a
-          href="https://rolstudiobangladesh.vercel.app/"
-          target="_blank"
-          className="  block pb-5 text-xs md:text-sm font-title-two text-secondary text-center"
-        >
-          &copy; 2025 RIVO || All rights reserved || Developed by ROL Studio.
-          Bangladesh
-        </a>
+        <span className="  block pb-5 text-xs md:text-sm font-title-two text-secondary text-center">
+          &copy; 2025 RIVO || All rights reserved ||
+          <a href="https://rolstudiobangladesh.vercel.app/" target="_blank">
+            Developed by ROL Studio Bangladesh. X
+          </a>
+          collab with
+          <a href="https://sdsifat.com/" target="_blank">
+            SD Sifat
+          </a>
+        </span>
       </Container>
     </footer>
   );

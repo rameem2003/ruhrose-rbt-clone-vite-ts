@@ -13,6 +13,7 @@ const NavberNew = ({
   setToggle: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
+  console.log(toggle);
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -88,13 +89,13 @@ const NavberNew = ({
               bounce: 0.5,
               type: "spring",
             }}
-            className=" hidden lg:flex items-center gap-5 justify-end"
+            className=" hidden gap-10 lg:flex items-center justify-end"
           >
             {NavOption.map((option) => (
               <li>
                 <Link
                   to={option.href}
-                  className=" text-lg font-medium font-title-two text-secondary capitalize"
+                  className=" text-base uppercase font-normal font-title-two text-secondary"
                 >
                   {option.name}
                 </Link>

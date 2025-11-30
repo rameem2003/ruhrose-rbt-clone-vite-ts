@@ -3,10 +3,11 @@
 @theme {
   --color-fade: #444;
   --color-primary: #2a393e;
-  --color-secondary: #D69E4E;
+  --color-secondary: #d69e4e;
   --font-main: "Public Sans", sans-serif;
   --font-title: "Kaushan Script", cursive;
-  --font-title-two: "Audiowide", sans-serif;
+  --font-title-two: "Montserrat", sans-serif;
+  --font-title-three: "Playfair Display", serif;
   --shadow-custom: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) inset;
   --shadow-custom-one: 0 10px 10px -5px rgba(0, 0, 0, 0.5),
     0 10px 10px -5px rgba(0, 0, 0, 0.5);
