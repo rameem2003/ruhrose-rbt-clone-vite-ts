@@ -5,6 +5,10 @@ import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 
 import { BsArrowDown } from "react-icons/bs";
 
+import banner from "../../../assets/banner.png";
+import banner1 from "../../../assets/banner1.jpg";
+import banner2 from "../../../assets/banner2.jpg";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -73,43 +77,33 @@ const Banner = () => {
           modules={[EffectFade, Autoplay, Navigation, Pagination]}
           className="mySwiper h-screen"
         >
-          {/* <SwiperSlide>
-            <div className="h-full">
-              <img
-                className=" w-full h-full"
-                src="https://images.unsplash.com/photo-1522753071498-f3137a65aee3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
-            </div>
-          </SwiperSlide> */}
           <SwiperSlide>
             <div className="h-full">
-              <img
-                className=" w-full h-full"
-                src="https://plus.unsplash.com/premium_photo-1677695581626-2a75bdece138?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              />
+              <img className=" w-full h-full object-cover" src={banner} />
             </div>
           </SwiperSlide>
         </Swiper>
 
-        <div className="w-full flex pt-20 lg:pt-40 flex-col bg-white/10 backdrop-blur-sm items-center justify-center h-screen absolute top-0 left-0 z-10">
-          <div className=" p-10 xl:p-32 rounded-md bg-white/50  backdrop-blur-3xl">
+        <div className="w-full  translate-y-[300px] flex pt-20 lg:pt-40 flex-col  items-center justify-center h-screen absolute top-0 left-0 z-10">
+          <div className=" px-20 rounded-md  bg-white/80 shadow-xl backdrop-blur-3xl">
             <ComponentReveal y={-50}>
-              <h1 className=" text-6xl md:text-9xl font-title-three font-extrabold text-center text-secondary">
+              <h1 className=" text-6xl  font-title-three font-extrabold text-center text-secondary">
                 RIVO <span className=" italic">Canada</span>
               </h1>
             </ComponentReveal>
 
             <ComponentReveal y={-50} delay={0.8}>
-              <p className="text-secondary w-auto lg:w-[700px] mx-auto mt-5 font-title-three text-center font-medium text-xl md:text-2xl">
+              <p className="text-secondary w-auto lg:w-[700px] mx-auto mt-5 font-title-three text-center font-medium text-xl ">
                 We take a fully hands-on approach, managing every stage of the
                 supply chain—from the first idea to final delivery
               </p>
             </ComponentReveal>
+            {/* <div className=" text-center">
+              <button className="  mt-10 w-[60px] h-[60px] cursor-pointer animate-bounce rounded-full inline-flex items-center justify-center bg-transparent hover:bg-white duration-300">
+                <BsArrowDown className=" text-secondary hover:text-black text-3xl font-semibold" />
+              </button>
+            </div> */}
           </div>
-
-          <button className=" mt-10 w-[60px] h-[60px] cursor-pointer animate-bounce rounded-full flex items-center justify-center bg-transparent hover:bg-white duration-300">
-            <BsArrowDown className=" text-secondary hover:text-black text-3xl font-semibold" />
-          </button>
         </div>
       </section>
     </>

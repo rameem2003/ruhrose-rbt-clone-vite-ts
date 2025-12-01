@@ -1,6 +1,7 @@
 import Container from "../../common/Container";
 import ComponentReveal from "../../common/ComponentReveal";
-import sustainablity from "../../../assets/sustainablity.jpg";
+import sustainiability1 from "../../../assets/sustainiability1.jpg";
+import { Link } from "react-router";
 
 const Sustainability = () => {
   return (
@@ -22,43 +23,20 @@ const Sustainability = () => {
                 transparent operations, and continually invest in cleaner, safer
                 production methods.
               </p>
-              <p className=" text-secondary  mt-4 text-sm mb-5 font-title-two font-medium">
-                We prioritize environmentally responsible materials such as
-                organic cotton, recycled fibers, low-impact dyes, and certified
-                sustainable textiles. Our team evaluates the environmental
-                footprint of each stage of development - helping clients create
-                products that reduce waste, conserve resources, and support
-                long-term circularity.
-              </p>
 
-              <div className=" flex w-full flex-wrap xl:flex-nowrap items-start gap-5 justify-between">
-                <div className=" w-full xl:w-1/2">
-                  <p className="  text-secondary mt-4 text-sm font-title-two font-normal">
-                    Sustainable fashion is not just about choosing better
-                    fabrics; it’s about designing smarter. We help brands
-                    optimize patterns, reduce excess inventory, and develop
-                    timeless pieces that stay relevant beyond the season. By
-                    combining thoughtful design with responsible sourcing, we
-                    help our clients build collections that perform well
-                    commercially while contributing to a more sustainable
-                    industry.
-                  </p>
-                </div>
-                <div className=" w-full xl:w-1/2">
-                  <p className=" text-secondary  mt-4 text-sm font-title-two font-normal">
-                    With Rivo Canada Inc., you don’t have to choose between
-                    quality, creativity, and sustainability - you can have all
-                    three.
-                  </p>
-                </div>
-              </div>
+              <Link
+                to="/sustainability"
+                className="cursor-pointer block text-center py-3 px-6 border-2 border-secondary w-full font-medium font-title-two text-secondary duration-300 hover:bg-secondary hover:text-white mt-10"
+              >
+                Read More
+              </Link>
             </ComponentReveal>
           </div>
           <div className=" w-full lg:w-1/2">
             <ComponentReveal x={-50}>
               <img
                 className=" rounded-tl-2xl rounded-br-2xl w-full max-h-[700px] object-cover"
-                src={sustainablity}
+                src={sustainiability1}
                 alt="Sustainability"
               />
             </ComponentReveal>

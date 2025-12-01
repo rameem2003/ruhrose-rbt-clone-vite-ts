@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Container from "../../common/Container";
 import ComponentReveal from "../../common/ComponentReveal";
 
@@ -60,37 +61,13 @@ const Varity = () => {
                 translating drawings into clothing, we craft pieces that are
                 meaningful, market-ready, and aligned with your brand’s story.
               </p>
-              <p className=" text-primary  mt-4 text-sm mb-5 font-title-two font-medium">
-                Our work extends far beyond design. We study trends, materials,
-                construction methods, and cost efficiencies to ensure each style
-                is both visually compelling and practical to produce. The result
-                is apparel that performs well in the market - manufactured
-                efficiently, priced strategically, and tailored to the customer
-                it’s created for.
-              </p>
 
-              <div className=" flex w-full flex-wrap xl:flex-nowrap items-start gap-5 justify-between">
-                <div className=" w-full xl:w-1/2">
-                  <p className="  text-primary mt-4 text-sm font-title-two font-normal">
-                    From everyday essentials to unique statement items, we
-                    support brands at all stages of development. Whether you're
-                    building your first style or scaling a full assortment, our
-                    partnerships with reliable factories, technical teams, and
-                    quality specialists ensure a consistent and professional
-                    outcome every time.
-                  </p>
-                </div>
-                <div className=" w-full xl:w-1/2">
-                  <p className=" text-primary  mt-4 text-sm font-title-two font-normal">
-                    We keep the entire process organized, transparent, and
-                    guided. By helping brands avoid common production pitfalls,
-                    we simplify the path from concept to finished garment. With
-                    Rivo Canada Inc., product creation becomes a smooth,
-                    thoughtful, and achievable experience - exactly how modern
-                    apparel development should feel.
-                  </p>
-                </div>
-              </div>
+              <Link
+                to="/design"
+                className="cursor-pointer block text-center py-3 px-6 border-2 border-primary  w-full font-medium font-title-two text-primary duration-300 hover:bg-primary   hover:text-white mt-10"
+              >
+                Read More
+              </Link>
             </ComponentReveal>
           </div>
         </div>
