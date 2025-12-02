@@ -35,9 +35,7 @@ const NavberNew = ({
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 w-full duration-300 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      } `}
+      className={`fixed top-0 left-0 right-0 z-50 w-full duration-300 bg-primary`}
     >
       <Container>
         <div className=" flex items-center justify-between py-2">

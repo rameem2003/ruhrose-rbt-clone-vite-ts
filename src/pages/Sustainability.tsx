@@ -3,35 +3,27 @@ import { motion } from "framer-motion";
 import sustainiability from "../assets/sustainiability.jpg";
 import sustainiability2 from "../assets/sustainiability2.jpg";
 import ComponentReveal from "../components/common/ComponentReveal";
+import { useEffect } from "react";
 const Sustainability = () => {
+  useEffect(() => {
+    document.title = "Sustainability";
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <main className=" py-10 bg-primary">
       <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 1.5,
-            delay: 0.8,
-            ease: "easeInOut",
-            bounce: 0.5,
-            type: "spring",
-          }}
-        >
-          <img
-            className=" mt-10  h-auto lg:h-[600px] w-full object-cover "
-            src={sustainiability2}
-            alt="Sustainability"
-          />
-        </motion.div>
-
-        <div className=" w-full ">
-          <ComponentReveal x={50}>
-            <h2 className=" text-secondary  text-xl md:text-6xl font-title-three font-bold mt-4 leading-[50px] md:leading-[70px]">
+        <div className=" py-20 text-center">
+          <ComponentReveal x={-50} delay={1}>
+            <h1 className=" text-secondary text-4xl  sm:text-6xl md:text-[70px] lg:text-[90px] xl:text-[120px] font-title-two font-bold">
               Sustainability
-            </h2>
-
-            <p className=" text-secondary  mt-4 text-base mb-5 md:text-xl lg:text-2xl font-title-two font-medium">
+            </h1>
+          </ComponentReveal>
+          <ComponentReveal x={-50} delay={1}>
+            <h2 className=" text-secondary text-base md:text-xl text-center  font-title-two font-bold mt-4">
               At Rivo Canada Inc., sustainability isn’t a trend - it’s a
               responsibility. Every decision we make, from material selection to
               factory partnerships, is guided by the belief that fashion should
@@ -39,7 +31,12 @@ const Sustainability = () => {
               manufacturers who follow ethical labor practices, maintain
               transparent operations, and continually invest in cleaner, safer
               production methods.
-            </p>
+            </h2>
+          </ComponentReveal>
+        </div>
+
+        <div className=" w-full ">
+          <ComponentReveal x={50} delay={1}>
             <p className=" text-secondary  mt-4 text-base mb-5 font-title-two font-medium">
               We prioritize environmentally responsible materials such as
               organic cotton, recycled fibers, low-impact dyes, and certified
@@ -49,23 +46,44 @@ const Sustainability = () => {
               long-term circularity.
             </p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 1.5,
-                delay: 0.8,
-                ease: "easeInOut",
-                bounce: 0.5,
-                type: "spring",
-              }}
-            >
-              <img
-                className=" mt-10  h-auto lg:h-[600px] w-full object-top"
-                src={sustainiability}
-                alt="Sustainability"
-              />
-            </motion.div>
+            <div className=" gap-5 flex-wrap lg:flex-nowrap flex items-center justify-between">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1.5,
+                  delay: 0.8,
+                  ease: "easeInOut",
+                  bounce: 0.5,
+                  type: "spring",
+                }}
+                className=" w-full lg:w-1/2"
+              >
+                <img
+                  className=" mt-10  h-auto lg:h-[600px] w-full object-cover "
+                  src={sustainiability2}
+                  alt="Sustainability"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1.5,
+                  delay: 0.8,
+                  ease: "easeInOut",
+                  bounce: 0.5,
+                  type: "spring",
+                }}
+                className=" w-full lg:w-1/2"
+              >
+                <img
+                  className=" mt-10  h-auto lg:h-[600px] w-full object-top"
+                  src={sustainiability}
+                  alt="Sustainability"
+                />
+              </motion.div>
+            </div>
 
             <div className=" flex w-full flex-wrap xl:flex-nowrap items-start gap-5 justify-between">
               <div className=" w-full xl:w-1/2">

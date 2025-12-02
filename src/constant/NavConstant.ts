@@ -5,15 +5,15 @@ export const NavOption = [
   },
   {
     name: "About",
-    href: "/#about",
+    href: "/about",
   },
   {
     name: "Design",
-    href: "/#design",
+    href: "/design",
   },
   {
     name: "Sustainability",
-    href: "/#sustainability",
+    href: "/sustainability",
   },
   {
     name: "Services",

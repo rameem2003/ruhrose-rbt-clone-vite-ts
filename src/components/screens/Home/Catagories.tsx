@@ -3,6 +3,7 @@ import { services } from "../../../constant/Services";
 import ComponentReveal from "../../common/ComponentReveal";
 import Container from "../../common/Container";
 import { FaChevronDown } from "react-icons/fa";
+import ServiceCard from "../services/ServiceCard";
 
 const Catagories = () => {
   const [isAccordingOpen, setIsAccordingOpen] = useState<number | null>(0);
@@ -10,6 +11,8 @@ const Catagories = () => {
   const handleClick = (index: number | null) => {
     setIsAccordingOpen((prevIndex) => (prevIndex === index ? null : index));
   };
+  console.log(services);
+
   return (
     <section id="services" className="  py-40">
       <Container>
@@ -29,7 +32,7 @@ const Catagories = () => {
           </ComponentReveal>
         </div>
 
-        <div className=" mt-10">
+        <div className=" mt-10 hidden">
           {services?.map((according, index) => (
             <ComponentReveal y={-50} delay={index * 0.1} key={index}>
               <article key={index} className=" bg-primary mb-5 rounded p-3">
@@ -86,6 +89,14 @@ const Catagories = () => {
               </article>
             </ComponentReveal>
           ))}
+        </div>
+
+        <div className=" mt-10">
+          <div className=" flex items-center justify-between flex-wrap">
+            {services?.map((according, index) => (
+              <ServiceCard key={index} data={according} />
+            ))}
+          </div>
         </div>
       </Container>
     </section>

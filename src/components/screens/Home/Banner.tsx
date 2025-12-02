@@ -3,11 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 
-import { BsArrowDown } from "react-icons/bs";
-
 import banner from "../../../assets/banner.png";
-import banner1 from "../../../assets/banner1.jpg";
-import banner2 from "../../../assets/banner2.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -84,7 +80,7 @@ const Banner = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="w-full  translate-y-[300px] flex pt-20 lg:pt-40 flex-col  items-center justify-center h-screen absolute top-0 left-0 z-10">
+        <div className="w-full hidden  translate-y-[300px] flex pt-20 lg:pt-40 flex-col  items-center justify-center h-screen absolute top-0 left-0 z-10">
           <div className=" px-20 rounded-md  bg-white/80 shadow-xl backdrop-blur-3xl">
             <ComponentReveal y={-50}>
               <h1 className=" text-6xl  font-title-three font-extrabold text-center text-secondary">

@@ -2,11 +2,38 @@ import ComponentReveal from "../components/common/ComponentReveal";
 import Container from "../components/common/Container";
 import about2 from "../assets/about2.jpg";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About Us";
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <main className={`  bg-primary py-10 `}>
       <Container>
+        <div className=" py-20 text-center">
+          <ComponentReveal x={-50} delay={1}>
+            <h1 className=" text-secondary text-4xl  sm:text-6xl md:text-[70px] lg:text-[90px] xl:text-[120px] font-title-two font-bold">
+              About Rivo
+            </h1>
+          </ComponentReveal>
+          <ComponentReveal x={-50} delay={1}>
+            <h2 className=" text-secondary text-base md:text-xl text-center  font-title-two font-bold mt-4">
+              At Rivo Canada Inc., we believe that apparel manufacturing should
+              be defined by trust, transparency, and responsibility. Based in
+              Calgary and built on over 40 years of combined industry expertise,
+              we are setting a new standard in global manufacturing—empowering
+              brands with the clarity, integrity, and craftsmanship they deserve
+              at every stage of their journey.
+            </h2>
+          </ComponentReveal>
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,24 +55,6 @@ const About = () => {
         <div>
           <div className=" mt-20">
             <div className="">
-              <ComponentReveal x={-50} delay={1}>
-                <h1 className=" text-secondary  text-xl md:text-6xl font-title-two font-bold">
-                  About Rivo
-                </h1>
-              </ComponentReveal>
-
-              <ComponentReveal x={-50} delay={1}>
-                <h2 className=" text-secondary text-base md:text-xl text-justify lg:text-left lg:text-2xl font-title-two font-bold mt-4">
-                  At Rivo Canada Inc., we believe that apparel manufacturing
-                  should be defined by trust, transparency, and responsibility.
-                  Based in Calgary and built on over 40 years of combined
-                  industry expertise, we are setting a new standard in global
-                  manufacturing—empowering brands with the clarity, integrity,
-                  and craftsmanship they deserve at every stage of their
-                  journey.
-                </h2>
-              </ComponentReveal>
-
               <ComponentReveal y={-50}>
                 <p className=" text-secondary  mt-4 text-sm text-justify lg:text-left lg:text-[20px] font-title-two font-medium">
                   We understand the challenges brands face—complex supply
