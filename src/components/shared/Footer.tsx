@@ -1,7 +1,7 @@
-import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router";
 import Container from "../common/Container";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -89,11 +89,11 @@ const Footer = () => {
         </div>
 
         <span className="  block pb-5 text-xs md:text-sm font-title-two text-secondary text-center">
-          &copy; 2025 RIVO || All rights reserved ||
+          &copy; 2025 RIVO || All rights reserved || {""}
           <a href="https://rolstudiobangladesh.vercel.app/" target="_blank">
-            Developed by ROL Studio Bangladesh. X
+            Developed by ROL Studio Bangladesh
           </a>
-          collab with
+          <span className=" mx-2">X</span>
           <a href="https://sdsifat.com/" target="_blank">
             SD Sifat
           </a>

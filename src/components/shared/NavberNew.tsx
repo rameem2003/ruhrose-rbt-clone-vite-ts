@@ -14,7 +14,7 @@ const NavberNew = ({
   setToggle: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
-  console.log(toggle);
+  console.log(toggle, scrolled);
 
   const handleScroll = () => {
     const offset = window.scrollY;

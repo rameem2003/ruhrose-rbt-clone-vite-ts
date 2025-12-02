@@ -4,6 +4,7 @@ import sustainiability from "../assets/sustainiability.jpg";
 import sustainiability2 from "../assets/sustainiability2.jpg";
 import ComponentReveal from "../components/common/ComponentReveal";
 import { useEffect } from "react";
+import Contact from "../components/common/Contact";
 const Sustainability = () => {
   useEffect(() => {
     document.title = "Sustainability";
@@ -35,7 +36,7 @@ const Sustainability = () => {
           </ComponentReveal>
         </div>
 
-        <div className=" w-full ">
+        <div className=" w-full mb-10">
           <ComponentReveal x={50} delay={1}>
             <p className=" text-secondary  mt-4 text-base mb-5 font-title-two font-medium">
               We prioritize environmentally responsible materials such as
@@ -108,6 +109,7 @@ const Sustainability = () => {
           </ComponentReveal>
         </div>
       </Container>
+      <Contact />
     </main>
   );
 };

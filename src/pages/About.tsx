@@ -3,6 +3,7 @@ import Container from "../components/common/Container";
 import about2 from "../assets/about2.jpg";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import Contact from "../components/common/Contact";
 
 const About = () => {
   useEffect(() => {
@@ -52,7 +53,7 @@ const About = () => {
           />
         </motion.div>
 
-        <div>
+        <div className=" mb-10">
           <div className=" mt-20">
             <div className="">
               <ComponentReveal y={-50}>
@@ -175,6 +176,7 @@ const About = () => {
           </div>
         </div>
       </Container>
+      <Contact />
     </main>
   );
 };

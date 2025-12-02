@@ -25,7 +25,7 @@ const ServiceCard = ({
         </h1>
 
         <Link
-          to={`/services/${data.label}`}
+          to={`/service/${data.label}`}
           className="bg-secondary z-[1-] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3  transition-all duration-1000 text-white rounded-md text-[0.9rem]"
         >
           View Details
@@ -33,7 +33,7 @@ const ServiceCard = ({
       </div>
 
       {/*  bottom shadow  */}
-      <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"></div>
+      <div className="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-linear-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-full absolute bottom-0 left-0 right-0"></div>
     </div>
   );
 };
