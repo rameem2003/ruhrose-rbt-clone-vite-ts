@@ -1,6 +1,4 @@
 import Container from "../common/Container";
-import logo from "../../assets/logo.png";
-import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
@@ -50,9 +48,9 @@ const NavberNew = ({
               type: "spring",
             }}
           >
-            <Link to="/">
-              <img src={logo} alt="Logo" className="w-[80px]" />
-            </Link>
+            <HashLink smooth to="/#home">
+              <img src="/logo.png" alt="Logo" className="w-[80px]" />
+            </HashLink>
           </motion.div>
 
           <motion.ul

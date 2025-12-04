@@ -1,22 +1,22 @@
 import ComponentReveal from "../../common/ComponentReveal";
 import Container from "../../common/Container";
-import about from "../../../assets/about1.jpg";
+import banner2 from "../../../assets/banner2.jpg";
 import { Link } from "react-router";
 
 const About = () => {
   return (
     <section id="about" className=" bg-primary py-40">
       <Container>
-        <div className=" flex items-center flex-wrap lg:flex-nowrap justify-between gap-4">
+        <div className=" flex items-start flex-wrap lg:flex-nowrap justify-between gap-4">
           <div className="  w-full lg:w-1/2">
-            <ComponentReveal x={-50}>
+            {/* <ComponentReveal x={-50}>
               <h2 className=" text-secondary  text-3xl md:text-3xl font-title-two font-bold mt-4 leading-[50px]">
                 Connecting designers and brands with{" "}
                 <span className=" font-title-three italic">
                   vetted overseas clothing factories
                 </span>
               </h2>
-            </ComponentReveal>
+            </ComponentReveal> */}
 
             <ComponentReveal y={-50}>
               <p className=" text-secondary  mt-4 text-base font-title-two font-medium">
@@ -30,8 +30,8 @@ const About = () => {
                 world.
               </p>
 
-              <div className=" mt-10 flex w-full flex-wrap xl:flex-nowrap items-start gap-5 justify-between">
-                <div className=" w-full xl:w-1/2">
+              <div className=" mt-10 f w-full flex-wrap xl:flex-nowrap items-start gap-5 justify-between">
+                <div className=" w-full">
                   <h4 className=" text-secondary  text-xl font-title-two font-medium">
                     Our Mission
                   </h4>
@@ -42,7 +42,7 @@ const About = () => {
                     plus-size and adaptive/disability apparel.
                   </p>
                 </div>
-                <div className=" w-full xl:w-1/2">
+                <div className=" w-full">
                   <h4 className=" text-secondary  text-xl font-title-two font-medium">
                     Our Vision
                   </h4>
@@ -68,7 +68,7 @@ const About = () => {
             <ComponentReveal x={50}>
               <img
                 className=" rounded-tl-2xl rounded-br-2xl w-full max-h-[700px] object-cover"
-                src={about}
+                src={banner2}
                 alt="About company"
               />
             </ComponentReveal>

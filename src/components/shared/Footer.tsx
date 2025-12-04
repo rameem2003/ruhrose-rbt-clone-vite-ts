@@ -1,7 +1,8 @@
 import Container from "../common/Container";
 import logo from "../../assets/logo.png";
-import { Link } from "react-router";
 import { FaLinkedin } from "react-icons/fa";
+import { NavOption } from "../../constant/NavConstant";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -10,17 +11,29 @@ const Footer = () => {
         <img src={logo} alt="logo" className="mx-auto" />
         <div className=" py-28 flex flex-col gap-20 md:flex-row md:gap-0 items-start justify-between">
           <div>
-            <Link
-              to="/"
+            <HashLink
+              smooth
+              to="/#home"
               className=" text-2xl font-title-two text-secondary font-bold"
             >
               RIVO
-            </Link>
+            </HashLink>
           </div>
 
           <div>
             <ul>
-              <li className=" mb-5">
+              {NavOption.slice(0, 3).map((option, i) => (
+                <li key={i} className=" mb-5">
+                  <HashLink
+                    smooth
+                    className="font-normal text-base font-title-two text-secondary"
+                    to={option.href}
+                  >
+                    {option.name}
+                  </HashLink>
+                </li>
+              ))}
+              {/* <li className=" mb-5">
                 <Link
                   className="font-normal text-base font-title-two text-secondary"
                   to="/"
@@ -43,13 +56,24 @@ const Footer = () => {
                 >
                   Production
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
           <div>
             <ul>
-              <li className=" mb-5">
+              {NavOption.slice(3, 6).map((option, i) => (
+                <li key={i} className=" mb-5">
+                  <HashLink
+                    smooth
+                    className="font-normal text-base font-title-two text-secondary"
+                    to={option.href}
+                  >
+                    {option.name}
+                  </HashLink>
+                </li>
+              ))}
+              {/* <li className=" mb-5">
                 <Link
                   className="font-normal text-base font-title-two text-secondary"
                   to="/"
@@ -72,7 +96,7 @@ const Footer = () => {
                 >
                   Contact Us
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
