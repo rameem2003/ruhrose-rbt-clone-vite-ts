@@ -1,8 +1,21 @@
 import { Link } from "react-router";
 import Container from "../../common/Container";
 import ComponentReveal from "../../common/ComponentReveal";
+import small1 from "../../../assets/small.jpg";
+import small2 from "../../../assets/small0.jpg";
+import small3 from "../../../assets/small3.jpg";
+import small4 from "../../../assets/small4.jpg";
+import small5 from "../../../assets/small5.jpg";
+import small6 from "../../../assets/small6.jpg";
+import small7 from "../../../assets/small7.jpg";
+import small8 from "../../../assets/small8.jpg";
+import small11 from "../../../assets/small11.jpg";
+import small12 from "../../../assets/sustainiability1.jpg";
+import sustainiability2 from "../../../assets/sustainiability2.jpg";
+import production from "../../../assets/production.jpg";
+import about from "../../../assets/about1.jpg";
 
-const images = [
+const imagess = [
   "https://images.unsplash.com/photo-1522943854798-7ea1c5464eba?q=80&w=3274&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1498435999018-6803de1f1c1f?q=80&w=3273&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1541695226403-a09aa08e5135?q=80&w=3276&auto=format&fit=crop",
@@ -20,6 +33,22 @@ const images = [
   "https://images.unsplash.com/photo-1529369623266-f5264b696110?q=80&w=3174&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1583513702439-2e611c58e93d?q=80&w=3269&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=3327&auto=format&fit=crop",
+];
+
+const images = [
+  small1,
+  small2,
+  small3,
+  small4,
+  small5,
+  small6,
+  small7,
+  small8,
+  small11,
+  small12,
+  sustainiability2,
+  production,
+  about,
 ];
 
 const Varity = () => {

@@ -2,7 +2,7 @@ import Container from "../common/Container";
 import logo from "../../assets/logo.png";
 import { NavOption } from "../../constant/NavConstant";
 import { motion } from "framer-motion";
-import { FaTimes } from "react-icons/fa";
+import { FaAngleRight, FaTimes } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router";
 
@@ -17,7 +17,7 @@ const MobileNav = ({
     <aside
       className={` duration-300  fixed ${
         toggle ? "top-0" : "top-[-200%]"
-      } left-0 z-100 w-full h-screen bg-primary py-20 flex items-center justify-center flex-col`}
+      } left-0 z-100000000 w-full h-screen bg-primary py-20 flex items-center justify-center flex-col`}
     >
       <button className=" absolute top-5 right-5">
         <FaTimes
@@ -48,9 +48,9 @@ const MobileNav = ({
                     smooth
                     onClick={() => setToggle(false)}
                     to={option.href}
-                    className=" text-center block mb-10 text-4xl md:text-6xl font-medium font-title-two text-secondary capitalize"
+                    className=" flex items-center gap-2 text-center justify-center mb-5 md:mt-10 text-xl md:text-6xl font-medium font-title-two text-secondary capitalize"
                   >
-                    {option.name}
+                    {option.name} {option.links && <FaAngleRight />}
                   </HashLink>
                 </li>
               ))}

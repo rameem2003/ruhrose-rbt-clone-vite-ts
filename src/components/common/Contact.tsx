@@ -60,7 +60,7 @@ const Contact = () => {
   return (
     <section id="contact" className=" bg-white py-10">
       <Container>
-        <div className=" flex items-center justify-between flex-wrap md:flex-nowrap gap-5">
+        <div className=" flex items-start justify-between flex-wrap md:flex-nowrap gap-5">
           <div className=" w-full md:w-1/2">
             <ComponentReveal x={-50} delay={0.5}>
               <form ref={formRef} className="w-full" onSubmit={onSubmit}>
@@ -483,7 +483,31 @@ const Contact = () => {
           </div>
           <div className=" w-full md:w-1/2">
             <ComponentReveal x={50} delay={0.5}>
-              <img src={logistic} alt="Contact Image" />
+              <div className=" w-full h-full relative">
+                <div className=" text-white absolute top-0 left-0 w-full bg-primary px-4 py-6">
+                  <h3 className=" font-title-two  mb-5">
+                    <span className=" font-bold"> Rivo Canada Inc. </span>has
+                    offices internationally with dedicated team members ready to
+                    support your needs
+                  </h3>
+
+                  <a
+                    className=" font-title-two font-bold text-white mb-2 inline-block"
+                    href="https://maps.app.goo.gl/kqouTzuGTFPqRmFR8"
+                    target="_blank"
+                  >
+                    Click here to view the address
+                  </a>
+
+                  <h4 className=" mb-2 font-title-two">
+                    Email: enquire@rivocanada.com
+                  </h4>
+                  <h4 className=" font-title-two mb-2">
+                    Address: Calgary, AB <br /> Canada
+                  </h4>
+                </div>
+                <img src={logistic} alt="Contact Image" />
+              </div>
             </ComponentReveal>
           </div>
         </div>

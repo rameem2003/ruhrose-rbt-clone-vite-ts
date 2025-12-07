@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { NavOption } from "../../constant/NavConstant";
 import { HashLink } from "react-router-hash-link";
+import { FaAngleDown } from "react-icons/fa";
 const NavberNew = ({
   toggle,
   setToggle,
@@ -33,7 +34,7 @@ const NavberNew = ({
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 w-full duration-300 bg-primary`}
+      className={` top-0 left-0 right-0 z-50 w-full duration-300 bg-primary`}
     >
       <Container>
         <div className=" flex items-center justify-between py-2">
@@ -89,14 +90,29 @@ const NavberNew = ({
             className=" hidden gap-10 lg:flex items-center justify-end"
           >
             {NavOption.map((option, i) => (
-              <li key={i}>
+              <li key={i} className=" relative group">
                 <HashLink
                   smooth
                   to={option.href}
-                  className=" text-base uppercase font-normal font-title-two text-secondary"
+                  className=" flex items-center gap-2 text-base uppercase font-normal font-title-two text-secondary"
                 >
-                  {option.name}
+                  {option.name} {option.links && <FaAngleDown />}
                 </HashLink>
+                {option.links && (
+                  <ul className=" hidden group-hover:block absolute top-full left-0 z-10 bg-white">
+                    {option.links.map((link, i) => (
+                      <li key={i} className=" hover:bg-primary duration-300">
+                        <HashLink
+                          smooth
+                          to={link.href}
+                          className=" block px-5 py-2 text-base uppercase font-normal font-title-two text-secondary"
+                        >
+                          {link.name}
+                        </HashLink>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
             {/* <li>

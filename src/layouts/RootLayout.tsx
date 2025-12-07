@@ -11,12 +11,12 @@ const RootLayout = () => {
   const { toggle, setToggle } = useContext(MenuToggleContext)!;
 
   return (
-    <>
+    <div className={toggle ? "overflow-hidden" : ""}>
       <MobileNav toggle={toggle} setToggle={setToggle} />
       <NavberNew toggle={toggle} setToggle={setToggle} />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 

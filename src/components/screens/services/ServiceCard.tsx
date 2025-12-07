@@ -19,7 +19,7 @@ const ServiceCard = ({
       />
 
       {/*  text  */}
-      <div className="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col">
+      <div className="absolute top-[45%] transform group-hover:translate-y-[-45%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col">
         <h1 className="text-[1.5rem] font-bold text-white text-center capitalize">
           {data.label}
         </h1>
