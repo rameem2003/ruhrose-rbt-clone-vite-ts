@@ -1,5 +1,5 @@
 import Container from "./Container";
-import logistic from "../../assets/logistic.jpg";
+import contact from "../../assets/Contact.png";
 import ComponentReveal from "./ComponentReveal";
 import { useRef, useState } from "react";
 import { Bounce, toast } from "react-toastify";
@@ -484,7 +484,7 @@ const Contact = () => {
           <div className=" w-full md:w-1/2">
             <ComponentReveal x={50} delay={0.5}>
               <div className=" w-full h-full relative">
-                <div className=" text-white absolute top-0 left-0 w-full bg-primary px-4 py-6">
+                <div className=" text-white  top-0 left-0 w-full bg-primary px-4 py-6">
                   <h3 className=" font-title-two  mb-5">
                     <span className=" font-bold"> Rivo Canada Inc. </span>has
                     offices internationally with dedicated team members ready to
@@ -506,7 +506,7 @@ const Contact = () => {
                     Address: Calgary, AB <br /> Canada
                   </h4>
                 </div>
-                <img src={logistic} alt="Contact Image" />
+                <img src={contact} alt="Contact Image" />
               </div>
             </ComponentReveal>
           </div>

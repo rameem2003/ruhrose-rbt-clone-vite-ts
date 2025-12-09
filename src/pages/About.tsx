@@ -1,13 +1,13 @@
 import ComponentReveal from "../components/common/ComponentReveal";
 import Container from "../components/common/Container";
-import about2 from "../assets/about2.jpg";
+import about2 from "../assets/About us.jpg";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Contact from "../components/common/Contact";
 
 const About = () => {
   useEffect(() => {
-    document.title = "About Us";
+    document.title = "About Us || Rivo Canada Inc.";
 
     window.scrollTo({
       top: 0,
@@ -47,7 +47,7 @@ const About = () => {
           }}
         >
           <img
-            className=" mt-10  h-auto lg:h-[600px] w-full object-cover"
+            className=" mt-10  h-auto lg:h-[600px] w-full object-top"
             src={about2}
             alt="about image"
           />

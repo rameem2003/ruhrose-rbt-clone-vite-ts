@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import Contact from "../components/common/Contact";
 const Design = () => {
   useEffect(() => {
-    document.title = "Design";
+    document.title = "Design || Rivo Canada Inc.";
 
     window.scrollTo({
       top: 0,

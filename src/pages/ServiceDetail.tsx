@@ -17,7 +17,7 @@ const ServiceDetail = () => {
   console.log(serviceData);
 
   useEffect(() => {
-    document.title = label || "";
+    document.title = `${label} || Rivo Canada Inc.` || "Rivo Canada Inc.";
 
     window.scrollTo({
       top: 0,

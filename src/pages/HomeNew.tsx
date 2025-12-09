@@ -10,7 +10,7 @@ const HomeNew = () => {
   useEffect(() => {
     console.log("Home");
 
-    document.title = "Rivo";
+    document.title = "Rivo Canada Inc.";
 
     window.scrollTo({
       top: 0,
