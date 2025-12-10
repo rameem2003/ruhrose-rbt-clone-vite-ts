@@ -1,5 +1,4 @@
 import Container from "../common/Container";
-import logo from "../../assets/logo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { NavOption } from "../../constant/NavConstant";
 import { HashLink } from "react-router-hash-link";
@@ -8,7 +7,7 @@ const Footer = () => {
   return (
     <footer className=" w-full bg-primary pt-40">
       <Container>
-        <img src={logo} alt="logo" className="mx-auto" />
+        <img src="/logo.png" alt="logo" className="mx-auto" />
         <div className=" py-28 flex flex-col gap-20 md:flex-row md:gap-0 items-start justify-between">
           <div>
             <HashLink

@@ -50,7 +50,7 @@ const NavberNew = ({
             }}
           >
             <HashLink smooth to="/#home">
-              <img src="/logo.png" alt="Logo" className="w-[80px]" />
+              <img src="/logo.png" alt="Logo" className="w-[100px]" />
             </HashLink>
           </motion.div>
 
