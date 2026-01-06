@@ -1,7 +1,7 @@
 import design1 from "../assets/design1.jpg";
 import small8 from "../assets/small8.jpg";
 import small11 from "../assets/small11.jpg";
-// import logistic from "../assets/logistic.jpg";
+import logistic from "../assets/logistic.jpg";
 import small4 from "../assets/small4.jpg";
 import small7 from "../assets/small7.jpg";
 import small5 from "../assets/small5.jpg";
@@ -37,7 +37,7 @@ export const services = [
   },
   {
     label: "Logistics & Transportation Service",
-    image: [small4] as string[],
+    image: [logistic, small4] as string[],
     description: `Rivo Canada Inc. provides end-to-end logistics solutions designed to make global shipping smooth, reliable, and stress-free. From label stock management and packing to transportation and warehous  ing, we ensure your products move efficiently through every stage of the supply chain. We also offer consolidated shipping options to simplify freight management and reduce costs. \n Every shipment is packed according to your exact requirements, ensuring products arrive in perfect condition and ready for distribution. Whether you already know what you need or would like expert guidance, our team is ready to advise and customize solutions based on your project goals. Pricing is evaluated individually to make sure you receive fair and accurate rates. \nInternational shipping requires the right balance of speed, cost, and practicality. We help you choose the most effective mode of transportation by sea, sea/air or air based on your timeline, budget, and business needs. With the right logistics strategy, your products reach their destination on time, securely, and at the best value.`,
   },
   {
