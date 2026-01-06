@@ -12,7 +12,7 @@ import small8 from "../../../assets/small8.jpg";
 import small11 from "../../../assets/small11.jpg";
 import small12 from "../../../assets/sustainiability1.jpg";
 import sustainiability2 from "../../../assets/sustainiability2.jpg";
-import production from "../../../assets/production.jpg";
+import production from "../../../assets/productionimg.jpg";
 import about from "../../../assets/about1.jpg";
 
 const images = [
